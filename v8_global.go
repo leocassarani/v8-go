@@ -6,15 +6,15 @@ package v8
 import "C"
 import "unsafe"
 
-type embedable struct {
+type embeddable struct {
 	data interface{}
 }
 
-func (this embedable) GetPrivateData() interface{} {
+func (this embeddable) GetPrivateData() interface{} {
 	return this.data
 }
 
-func (this *embedable) SetPrivateData(data interface{}) {
+func (this *embeddable) SetPrivateData(data interface{}) {
 	this.data = data
 }
 

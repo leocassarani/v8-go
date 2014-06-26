@@ -13,7 +13,7 @@ import "runtime"
 // A sandboxed execution context with its own set of built-in objects
 // and functions.
 type Context struct {
-	embedable
+	embeddable
 	self   unsafe.Pointer
 	engine *Engine
 }

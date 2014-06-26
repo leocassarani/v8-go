@@ -16,7 +16,7 @@ var traceDispose = false
 // Objects from one engine must not be used in other engine.
 // Not thred safe!
 type Engine struct {
-	embedable
+	embeddable
 	self unsafe.Pointer
 
 	// those fields are used to cache special values
